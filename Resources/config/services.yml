@@ -1,0 +1,7 @@
+services:
+    remg_console.question_registry:
+        class: Remg\ConsoleBundle\Question\QuestionRegistry
+        # a compiler pass should send all the questions tagged with "question.type" or something
+        arguments:
+            - "@service_container"
+            - []
